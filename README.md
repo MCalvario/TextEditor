@@ -9,7 +9,7 @@ you will find that the text editor still functions in the browser without errors
 
 ## Live Site Application
 [URL to deployed application]<br>
-[Professional Profile]![Alt text](img/ProfessionalProfile.png)
+[Screenshot of application]![Alt text](img/ProfessionalProfile.png)
 
 ## Credits
 Youtube: https://www.youtube.com/watch?v=QCNHPy88iKA<br>
