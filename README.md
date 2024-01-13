@@ -16,7 +16,7 @@ Youtube: https://www.youtube.com/watch?v=QCNHPy88iKA<br>
 google: https://www.google.com/
 
 
-## license
+## License
 Copyright (c) [2024] [Text-Editor]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
