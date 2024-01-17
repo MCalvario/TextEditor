@@ -13,35 +13,38 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+    
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "JATE",
+        title: "JATE Text Editor",
       }),
-      // injects our custom service work from src-sw.js
+
       new InjectManifest({
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
-      // creates a manifest.json file
+
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
         name: "Just Another Text Editor",
         short_name: "JATE",
-        description: "Text Editor with offline capabilities using IndexedDB",
-        background_color: "#225ca3",
-        theme_color: "#225ca3",
+        description: "Text Editor",
+        background_color: "#3a4449",
+        theme_color: "#ffffff",
         start_url: "/",
         publicPath: "/",
+
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
-            sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+            sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join("assets", "icons"),
           },
         ],
